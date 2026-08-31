@@ -7,8 +7,12 @@ from pathlib import Path
 import cv2
 from ultralytics import YOLO
 
-from blindspot.geometry import Box, NormalizedZone, detection_overlap_ratio, is_in_blindspot
-
+from blindspot.geometry import (
+    Box,
+    NormalizedZone,
+    detection_overlap_ratio,
+    is_in_blindspot,
+)
 
 # COCO ids for road users most relevant to blind-spot monitoring.
 DEFAULT_CLASSES = (0, 1, 2, 3, 5, 7)
