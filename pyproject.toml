@@ -8,14 +8,13 @@ version = "0.2.1"
 description = "Modular real-time blind-spot detection with YOLO and OpenCV"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
-
-[project.optional-dependencies]
-inference = [
+dependencies = [
   "numpy>=2.0,<3",
   "opencv-python>=4.10,<5",
   "ultralytics>=8.3,<9",
 ]
+
+[project.optional-dependencies]
 dev = [
   "pytest>=8.3,<9",
   "ruff>=0.9,<1",
